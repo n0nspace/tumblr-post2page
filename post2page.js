@@ -1,4 +1,4 @@
-let rawr = function buildArray() {
+var rawr = function buildArray() {
   const posts = tumblr_api_read.posts;
   let cards = [];
 
