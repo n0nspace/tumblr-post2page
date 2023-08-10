@@ -1,5 +1,5 @@
-function buildArray() {
-  const posts = tumblr_api_read.posts;
+function buildArray(json) {
+  const posts = json.posts;
   let cards = [];
 
   if (posts.length > 0) {
