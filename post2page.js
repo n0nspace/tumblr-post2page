@@ -1,4 +1,4 @@
-function buildArray(json) {
+function post2page(json) {
   const posts = json.posts;
   let cards = [];
 
