@@ -4,14 +4,14 @@ contents of posts and create an array with the content to then be used for examp
 The script was made to be used with Handlebars but you can surely use it to make your own stuff based on the array it generates. 
 Further, the script relies on specific post formatting to grab the right content. More on that below.
 
-My page theme SOMA uses this script. You can find the page theme here. For instructions on how to use it, please read on under Post Formatting. 
+My page theme SOMA uses this script. You can find the page theme here. For instructions on how to use it, please read on under [Post Formatting](https://github.com/n0nspace/tumblr-post2page/blob/main/README.md#post-formatting).
 
 ## Using Post2Page with Handlebars
 Here's everything you need to get started:
 - [Tumblr's v1 API JSON](https://github.com/n0nspace/tumblr-post2page/edit/main/README.md#get-tumblrs-v1-api-json-output) output to a whole blog or specific tag on the blog 
 (e.g. https://soma-preview.tumblr.com/api/read/json?&tagged=soma page cards)
-- Post2Page script
-- Handlebars
+- [Post2Page script](https://github.com/n0nspace/tumblr-post2page/blob/main/README.md#post2page-script)
+- [Handlebars](https://github.com/n0nspace/tumblr-post2page/blob/main/README.md#handlebars)
 - Some posts on a Tumblr blog
 
 ### Get Tumblr's v1 API JSON output
@@ -115,8 +115,19 @@ within the grid (such as Masonry). The HTML does not yet exist before this scrip
   </script>
 ```
 
-### Post Formatting
+## Post Formatting
 
+For this script to work, it's neccessary to follow a specific post formatting. Right now, the script supports the following:
+- **Image:** The first image in a post. `{{this.img}}`
+- **Blockquote ("Subtitle"):** The first blockquote block in a post. `{{this.subtitle}}`
+- **Table:** Using the chat block, you can add as many details as you want. In your template, you can target these details by their "key" (whatever you wrote on each line before the column) with any spaces removed `{{this.[WHATEVERYOUENTERED]}}`
+-  **Paragraph:** The paragraph immediately after the chat block (MAKE THIS THE FIRST?) `{{this.description}}`
+- **Link:** The first link in a post. `{{this.link}}`
+- **Tags:** Any tags added to the post. `{{this.tags}}`
+
+Example Tumblr post: https://soma-preview.tumblr.com/post/724075330107785216/love-is-careless-love-is-blind-title
+
+[ADD SECTION FOR EACH TYPE AND WITH SCREENSHOTS HERE]
 
 
 
