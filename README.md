@@ -120,7 +120,7 @@ within the grid (such as Masonry). The HTML does not yet exist before this scrip
 For this script to work, it's neccessary to follow a specific post formatting. Right now, the script supports the following:
 - **Image:** The first image in a post. `{{this.img}}`
 - **Blockquote ("Subtitle"):** The first blockquote block in a post. `{{this.subtitle}}`
-- **Table:** Using the chat block, you can add as many details as you want. In your template, you can target these details by their "key" (whatever you wrote on each line before the column) with any spaces removed `{{this.[WHATEVERYOUENTERED]}}`
+- **Table:** Using the chat block, you can add as many details as you want. In your template, these details use their "key" (the text before the colon) with any spaces removed `{{this.[WHATEVERYOUENTERED]}}`. The text after the colon **must** be italics.
 -  **Paragraph:** The paragraph immediately after the chat block (MAKE THIS THE FIRST?) `{{this.description}}`
 - **Link:** The first link in a post. `{{this.link}}`
 - **Tags:** Any tags added to the post. `{{this.tags}}`
