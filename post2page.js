@@ -92,7 +92,7 @@ function post2page(json) {
          
          
          /*get tags*/
-         let postTags = pid.tags;
+         let postTags = (pid.tags).replace(/\s+/g, '-');
          
          card["tags"] = postTags;
          /*console.log(postTags);*/
