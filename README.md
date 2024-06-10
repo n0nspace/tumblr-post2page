@@ -1,7 +1,7 @@
 # tumblr-post2page
 Welcome! Tumblr Post2Page is a (very crude) script that uses [Tumblr's v1 API](https://www.tumblr.com/docs/en/api/v1) to pull the 
-contents of posts and create an array with the content to then be used for example in a directly page theme. 
-The script was made to be used with Handlebars but you can surely use it to make your own stuff based on the array it generates. 
+contents of tagged posts (following a specific formatting, more on that below) and adds it to a character page theme. 
+The script was made to be used with Handlebars but you can surely use it to make your own stuff. 
 Further, the script relies on specific post formatting to grab the right content. More on that below.
 
 My page theme SOMA uses this script. You can find the page theme here. For instructions on how to use it, please read on under [Post Formatting](https://github.com/n0nspace/tumblr-post2page/blob/main/README.md#post-formatting).
@@ -116,6 +116,8 @@ within the grid (such as Masonry). The HTML does not yet exist before this scrip
 ```
 
 ## Post Formatting
+
+This only works with posts made with the new editor. This will not work with legacy posts!
 
 For this script to work, it's neccessary to follow a specific post formatting. Right now, the script supports the following:
 - **Image:** The first image in a post. `{{this.img}}`
