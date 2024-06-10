@@ -4,7 +4,7 @@ contents of tagged posts (following a specific formatting, more on that below) a
 The script was made to be used with Handlebars but you can surely use it to make your own stuff. 
 Further, the script relies on specific post formatting to grab the right content. More on that below.
 
-My page theme SOMA uses this script. You can find the page theme here. For instructions on how to use it, please read on under [Post Formatting](https://github.com/n0nspace/tumblr-post2page/blob/main/README.md#post-formatting).
+My page theme SOMA uses this script. You can find the page theme [here](https://github.com/n0nspace/tumblr-post2page/tree/main/soma). For instructions on how to use it, please read on under [Post Formatting](https://github.com/n0nspace/tumblr-post2page/blob/main/README.md#post-formatting).
 
 ## Using Post2Page with Handlebars
 Here's everything you need to get started:
